@@ -110,8 +110,10 @@ function App() {
   );
 
   //Sidebar handler
-  const toggle = () => setIsOpen(!isOpen);
-
+  const toggleSidebar = () => {
+    ReactTooltip.hide();
+    setIsOpen(!isOpen);
+  };
   ///////////////////////// JSX
   return (
     <>
@@ -119,11 +121,11 @@ function App() {
       <ScrollToTop />
       <Router>
         <GlobalStyle />
-        <Navbar toggle={toggle} order={order} />
+        <Navbar toggle={toggleSidebar} order={order} />
         {ReactDOM.createPortal(
           <Sidebar
             isOpen={isOpen}
-            toggle={toggle}
+            toggle={toggleSidebar}
             order={order}
             onUpdateOrder={updateOrderHandler}
             onRenderAlert={alertHandler}

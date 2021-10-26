@@ -79,6 +79,7 @@ export const ItemPrice = styled.span`
   display: flex;
   flex-direction: column;
   justify-content: right;
+  text-align: right;
 `;
 
 export const ItemQtd = styled.span`
@@ -86,7 +87,7 @@ export const ItemQtd = styled.span`
 `;
 
 export const BtnIncreaseQtd = styled.span`
-  padding: 2px 10px;
+  padding: 4px 12px;
   border: 1px solid #ce9e00;
   border-radius: 0px 8px 8px 0px;
   cursor: pointer;
@@ -100,7 +101,7 @@ export const BtnIncreaseQtd = styled.span`
   }
 `;
 export const BtnDecreaseQtd = styled.span`
-  padding: 2px 10px;
+  padding: 4px 12px;
   border: 1px solid #ce9e00;
   border-radius: 8px 0px 0px 8px;
   cursor: pointer;

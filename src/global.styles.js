@@ -16,7 +16,14 @@ export const GlobalStyle = createGlobalStyle`
  html, body {
     max-width: 100%;
     overflow-x: hidden;
+
+    a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
+}
+
+
 
 
 
