@@ -9,6 +9,7 @@ import { GlobalStyle } from "./global.styles";
 import AlertModal from "./Components/AlertModal/AlertModal";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import ReactTooltip from "react-tooltip";
+
 import ReactDOM from "react-dom";
 
 function App() {

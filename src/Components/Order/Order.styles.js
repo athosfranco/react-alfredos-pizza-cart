@@ -78,9 +78,7 @@ export const ItemQtdContainer = styled.div`
 export const ItemPrice = styled.span`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 33%;
-  text-align: right;
+  justify-content: right;
 `;
 
 export const ItemQtd = styled.span`
