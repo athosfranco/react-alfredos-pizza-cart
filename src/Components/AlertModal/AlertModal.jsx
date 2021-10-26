@@ -6,7 +6,7 @@ import {
   Overlay,
 } from "./AlertModal.styles";
 
-const AlertModal = ({ text, btnText, onCloseModal }) => {
+const AlertModal = ({ title, text, btnText, onCloseModal }) => {
   //Fecha o modal (envia o boleano 'false' pra App.js que usa setAlertModal pro valor boleano)
   const modalHandler = () => {
     onCloseModal(false);
@@ -14,7 +14,7 @@ const AlertModal = ({ text, btnText, onCloseModal }) => {
   return (
     <ModalContainer>
       <Modal>
-        <h2>Atenção</h2>
+        <h2>{title ? title : "Atenção"}</h2>
         <p>{text}</p>
         <CloseButton onClick={modalHandler}>{btnText}</CloseButton>
       </Modal>

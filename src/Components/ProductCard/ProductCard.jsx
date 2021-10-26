@@ -31,6 +31,7 @@ const ProductCard = ({ img, name, desc, category, price, onGetProduct }) => {
     const addToOrder = {
       productName: name,
       category: category,
+      desc: desc,
       quantity: quantity,
       price: price,
       totalPrice: quantity * price,

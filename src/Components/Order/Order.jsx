@@ -30,6 +30,7 @@ const Order = ({ order, onUpdateOrder, onRenderAlert }) => {
     currency: "BRL",
   };
 
+  //modifica quantidade do produto
   const productQtdHandler = (productName, modifier) => {
     const orderArrayTemp = JSON.parse(localStorage.getItem("orderArray"));
 
@@ -41,6 +42,7 @@ const Order = ({ order, onUpdateOrder, onRenderAlert }) => {
             element.totalPrice = element.quantity * element.price;
           } else
             onRenderAlert(
+              undefined,
               `Só é possível pedir um máximo de 15 unidades por item em um pedido.`,
               `Ok`
             );
@@ -50,15 +52,19 @@ const Order = ({ order, onUpdateOrder, onRenderAlert }) => {
             element.totalPrice = element.quantity * element.price;
           } else
             onRenderAlert(
+              undefined,
               `Não é possível reduzir mais a quantidade deste item. Para removê-lo do pedido, clique no "X" ao lado direito do item.`,
               `Ok`
             );
         }
       }
     });
-
     onUpdateOrder(orderArrayTemp);
   };
+
+  //exibe um modal com informaçoes do produto
+  const showProductInfo = (productName, productDesc, btnText) =>
+    onRenderAlert(productName, productDesc, btnText);
 
   return (
     <OrderContainer orderLength={order?.length}>
@@ -66,7 +72,11 @@ const Order = ({ order, onUpdateOrder, onRenderAlert }) => {
         {order?.map((product) => {
           return (
             <OrderItem>
-              <ItemDesc>
+              <ItemDesc
+                onClick={() =>
+                  showProductInfo(product.productName, product.desc, "Ok")
+                }
+              >
                 <h4>{product.productName}</h4>
                 <span>{product.category}</span>
                 <ItemQtd>Quantidade: {product.quantity}</ItemQtd>

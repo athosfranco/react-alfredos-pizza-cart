@@ -9,7 +9,6 @@ import { GlobalStyle } from "./global.styles";
 import AlertModal from "./Components/AlertModal/AlertModal";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import ReactTooltip from "react-tooltip";
-
 import ReactDOM from "react-dom";
 
 function App() {
@@ -18,11 +17,12 @@ function App() {
     JSON.parse(localStorage.getItem("orderArray"))
   );
   //renderiza modal
-  const alertHandler = (text, btnText) => {
+  const alertHandler = (title, text, btnText) => {
     setAlertModal(true);
     setAlertModalContent(
       ReactDOM.createPortal(
         <AlertModal
+          title={title}
           text={text}
           btnText={btnText}
           onCloseModal={modalHandler}
@@ -140,6 +140,7 @@ function App() {
             <Cardapio onGetOrder={orderHandler} />
           </Route>
         </Switch>
+
         <Footer />
       </Router>
       {ReactDOM.createPortal(

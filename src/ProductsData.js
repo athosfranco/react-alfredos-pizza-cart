@@ -25,7 +25,7 @@ const productsData = {
     },
     margherita: {
       name: "Margherita",
-      desc: "Mussarela coberta com tomates fatiados com um toque de manjericão",
+      desc: "Mussarela coberta com tomates fatiados e um toque de manjericão.",
       price: 30,
       img: margheritaImg,
       category: "Pizza",

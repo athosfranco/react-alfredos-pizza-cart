@@ -49,8 +49,11 @@ export const OrderItem = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #ce9e00;
-
   height: 80px;
+  cursor: pointer;
+  &:hover {
+    background-color: #eab300;
+  }
 `;
 
 export const ItemDesc = styled.div`

@@ -23,8 +23,8 @@ const Sidebar = ({ isOpen, toggle, order, onUpdateOrder, onRenderAlert }) => {
   };
 
   //
-  const alertHandler = (text, btnText) => {
-    onRenderAlert(text, btnText);
+  const alertHandler = (title, text, btnText) => {
+    onRenderAlert(title, text, btnText);
   };
 
   //Cálculo do preço final do pedido
