@@ -105,6 +105,7 @@ const Footer = () => {
           <SocialMediaLink href="/">
             <FaInstagramSquare />
           </SocialMediaLink>
+
           <SocialMediaLink href="/">
             <FaTwitterSquare />
           </SocialMediaLink>

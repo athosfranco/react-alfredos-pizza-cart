@@ -147,12 +147,9 @@ export const TwitterIcon = styled(FaTwitter)`
 export const TweetTime = styled.p``;
 
 export const SocialMediaLink = styled.a`
+  fill: currentColor;
   text-decoration: none;
   transition: 0.3s ease-out;
-  &:visited,
-  &:active {
-    color: #eeee;
-  }
   cursor: pointer;
   &:hover {
     color: #ffc500;

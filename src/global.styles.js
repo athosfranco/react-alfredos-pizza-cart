@@ -17,9 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     overflow-x: hidden;
 
-    a:hover, a:visited, a:link, a:active
+    a, a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
+    fill: currentColor;
+    color: white;
 }
 
     svg {
