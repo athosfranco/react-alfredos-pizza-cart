@@ -87,15 +87,15 @@ const Footer = () => {
           <Column>
             <MainTitle>Instagram</MainTitle>
             <InstagramGrid>
-              <InstagramPicture img={igpic1}></InstagramPicture>
-              <InstagramPicture img={igpic2}></InstagramPicture>
-              <InstagramPicture img={igpic3}></InstagramPicture>
-              <InstagramPicture img={igpic7}></InstagramPicture>
-              <InstagramPicture img={igpic8}></InstagramPicture>
-              <InstagramPicture img={igpic4}></InstagramPicture>
-              <InstagramPicture img={igpic5}></InstagramPicture>
-              <InstagramPicture img={igpic6}></InstagramPicture>
-              <InstagramPicture img={igpic9}></InstagramPicture>
+              <InstagramPicture src={igpic1} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic2} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic3} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic7} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic8} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic4} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic5} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic6} loading="lazy"></InstagramPicture>
+              <InstagramPicture src={igpic9} loading="lazy"></InstagramPicture>
             </InstagramGrid>
           </Column>
         </Columns>

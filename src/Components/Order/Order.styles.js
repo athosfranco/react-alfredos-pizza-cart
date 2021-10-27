@@ -7,7 +7,7 @@ export const OrderContainer = styled.div`
   width: 95%;
   height: 90%;
   transition: 0.5s ease-out;
-  overflow-y: scroll;
+  overflow-y: auto;
   cursor: default;
 
   h2 {

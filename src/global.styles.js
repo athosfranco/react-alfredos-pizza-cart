@@ -21,6 +21,10 @@ export const GlobalStyle = createGlobalStyle`
 {
     text-decoration: none;
 }
+
+    svg {
+        fill: currentColor;
+    }
 }
 
 

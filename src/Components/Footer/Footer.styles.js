@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FaTwitter } from "react-icons/fa";
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.footer`
   background-color: #212121;
   color: #eeee;
   min-height: 520px;
@@ -172,7 +172,14 @@ export const InstagramGrid = styled.div`
   }
 `;
 
-export const InstagramPicture = styled.div`
-  background-image: url(${(props) => props.img});
-  background-size: cover;
+export const InstagramPicture = styled.img`
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.28);
+    transition: 0.1s ease-out;
+  }
 `;
